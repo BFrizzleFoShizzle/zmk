@@ -220,10 +220,14 @@ static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,
         return zmk_rgb_underglow_change_hue(1);
     case RGB_HUD_CMD:
         return zmk_rgb_underglow_change_hue(-1);
+    case RGB_HUS_CMD:
+        return zmk_rgb_underglow_set_hue(binding->param2);
     case RGB_SAI_CMD:
         return zmk_rgb_underglow_change_sat(1);
     case RGB_SAD_CMD:
         return zmk_rgb_underglow_change_sat(-1);
+    case RGB_SAS_CMD:
+        return zmk_rgb_underglow_set_sat(binding->param2);
     case RGB_BRI_CMD:
         return zmk_rgb_underglow_change_brt(1);
     case RGB_BRD_CMD:

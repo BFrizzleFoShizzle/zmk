@@ -425,11 +425,29 @@ int zmk_rgb_underglow_change_hue(int direction) {
     return zmk_rgb_underglow_save_state();
 }
 
+int zmk_rgb_underglow_set_hue(int value) {
+    if (!led_strip)
+        return -ENODEV;
+
+    state.color.h = value;
+
+    return zmk_rgb_underglow_save_state();
+}
+
 int zmk_rgb_underglow_change_sat(int direction) {
     if (!led_strip)
         return -ENODEV;
 
     state.color = zmk_rgb_underglow_calc_sat(direction);
+
+    return zmk_rgb_underglow_save_state();
+}
+
+int zmk_rgb_underglow_set_sat(int value) {
+    if (!led_strip)
+        return -ENODEV;
+
+    state.color.s = value;
 
     return zmk_rgb_underglow_save_state();
 }

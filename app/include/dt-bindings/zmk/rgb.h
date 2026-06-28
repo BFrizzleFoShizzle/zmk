@@ -9,16 +9,18 @@
 #define RGB_OFF_CMD 2
 #define RGB_HUI_CMD 3
 #define RGB_HUD_CMD 4
-#define RGB_SAI_CMD 5
-#define RGB_SAD_CMD 6
-#define RGB_BRI_CMD 7
-#define RGB_BRD_CMD 8
-#define RGB_SPI_CMD 9
-#define RGB_SPD_CMD 10
-#define RGB_EFF_CMD 11
-#define RGB_EFR_CMD 12
-#define RGB_EFS_CMD 13
-#define RGB_COLOR_HSB_CMD 14
+#define RGB_HUS_CMD 5
+#define RGB_SAI_CMD 6
+#define RGB_SAD_CMD 7
+#define RGB_SAS_CMD 8
+#define RGB_BRI_CMD 9
+#define RGB_BRD_CMD 10
+#define RGB_SPI_CMD 11
+#define RGB_SPD_CMD 12
+#define RGB_EFF_CMD 13
+#define RGB_EFR_CMD 14
+#define RGB_EFS_CMD 15
+#define RGB_COLOR_HSB_CMD 16
 
 #define RGB_TOG RGB_TOG_CMD 0
 #define RGB_ON RGB_ON_CMD 0
